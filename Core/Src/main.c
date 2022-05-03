@@ -232,7 +232,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 {
 	if(hadc->Instance == ADC1)
 	{
-		if(HAL_OK != HAL_UART_Transmit_DMA(&huart2,(uint8_t*) AdcValue, 512)) Error_Handler();
+//		if(HAL_OK != HAL_UART_Transmit_DMA(&huart2,(uint8_t*) AdcValue, 512)) Error_Handler();
 //		AdcValue[i] = HAL_ADC_GetValue(&hadc1);
 
 		/* ring buffer used to transmit data - comment when not used */
